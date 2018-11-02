@@ -6,7 +6,6 @@ public class PlayerMotor : MonoBehaviour {
     private CharacterController controller;
     private Vector3 moveVector;
     private float speed = 5.0f;
-    private float verticalVelocity = 0.0f;
     private float animationDuration = 3.0f;
 
 
@@ -32,4 +31,9 @@ public class PlayerMotor : MonoBehaviour {
 
         controller.Move(moveVector * Time.deltaTime);
 	}
+    public void SetSpeed(int modifier)
+    {
+        speed = 5.0f + modifier;
+
+    }
 }
