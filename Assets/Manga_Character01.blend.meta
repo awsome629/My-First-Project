@@ -35,6 +35,24 @@ ModelImporter:
     100058: Sphere
     100060: Sphere_001
     100062: Underware
+    100064: Armature
+    100066: Armature_001
+    100068: Armature_002
+    100070: Armature_003
+    100072: Armature_004
+    100074: Armature_005
+    100076: Armature_006
+    100078: Armature_007
+    100080: Armature_008
+    100082: Bone
+    100084: Bone_0
+    100086: Bone_1
+    100088: Bone_2
+    100090: Bone_3
+    100092: Bone_4
+    100094: Bone_5
+    100096: Bone_6
+    100098: Bone_7
     400000: Belt
     400002: Body
     400004: Cylinder
@@ -67,6 +85,24 @@ ModelImporter:
     400058: Sphere
     400060: Sphere_001
     400062: Underware
+    400064: Armature
+    400066: Armature_001
+    400068: Armature_002
+    400070: Armature_003
+    400072: Armature_004
+    400074: Armature_005
+    400076: Armature_006
+    400078: Armature_007
+    400080: Armature_008
+    400082: Bone
+    400084: Bone_0
+    400086: Bone_1
+    400088: Bone_2
+    400090: Bone_3
+    400092: Bone_4
+    400094: Bone_5
+    400096: Bone_6
+    400098: Bone_7
     2100000: unnamed
     2100002: Material_001
     2300000: Belt
@@ -164,6 +200,7 @@ ModelImporter:
     4300060: Underware
     7400000: Default Take
     9500000: //RootNode
+    2186277476908879412: ImportLogs
   externalObjects: {}
   materials:
     importMaterials: 1
@@ -174,9 +211,10 @@ ModelImporter:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
     resampleCurves: 1
-    optimizeGameObjects: 0
+    optimizeGameObjects: 1
     motionNodeName: 
-    rigImportErrors: 
+    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
+      human bone 'Hips' not found\n"
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
@@ -184,7 +222,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -227,7 +265,167 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: Manga_Character01(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Belt
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Body
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder
+      parentName: Manga_Character01(Clone)
+      position: {x: 0.9017668, y: 1.9630613, z: -0.47485754}
+      rotation: {x: -0.7274459, y: 0.16114202, z: -0.39554235, w: 0.5370307}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_001
+      parentName: Manga_Character01(Clone)
+      position: {x: -0.83178025, y: 1.9691532, z: -0.46553132}
+      rotation: {x: -0.6303907, y: -0.39019212, z: 0.18815579, w: 0.64417017}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Cylinder_002
+      parentName: Manga_Character01(Clone)
+      position: {x: 2.4022212, y: 2.0484624, z: -0.7781015}
+      rotation: {x: -0.634343, y: 0.026694207, z: 0.65146244, w: 0.4153228}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: Cylinder_003
+      parentName: Manga_Character01(Clone)
+      position: {x: -2.31057, y: 2.0533981, z: -0.66250116}
+      rotation: {x: 0.60577506, y: 0.2858177, z: 0.7296955, w: -0.1374384}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_004
+      parentName: Manga_Character01(Clone)
+      position: {x: -3.5604074, y: 0.96988887, z: -0.6928793}
+      rotation: {x: -0.6127079, y: 0.3995526, z: -0.13244762, w: 0.6688829}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_005
+      parentName: Manga_Character01(Clone)
+      position: {x: 3.3009806, y: 0.6035517, z: -0.86671394}
+      rotation: {x: 0.6819802, y: -0.20131072, z: -0.55974644, w: -0.42551255}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_006
+      parentName: Manga_Character01(Clone)
+      position: {x: 3.7152042, y: 0.97591114, z: -0.9982822}
+      rotation: {x: 0.67427063, y: -0.12556882, z: -0.61535454, w: -0.3884976}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_007
+      parentName: Manga_Character01(Clone)
+      position: {x: -3.2750883, y: 0.61589676, z: -0.79092485}
+      rotation: {x: -0.61926603, y: 0.37829608, z: -0.108088516, w: 0.67949873}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Cylinder_008
+      parentName: Manga_Character01(Clone)
+      position: {x: -2.1819768, y: 1.8664749, z: -0.7106209}
+      rotation: {x: -0.6509537, y: -0.057597715, z: -0.5554141, w: 0.5142539}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_009
+      parentName: Manga_Character01(Clone)
+      position: {x: 2.2750807, y: 1.87435, z: -0.7453534}
+      rotation: {x: 0.636309, y: -0.12492768, z: -0.6186552, w: -0.4435874}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Cylinder_010
+      parentName: Manga_Character01(Clone)
+      position: {x: 2.0533025, y: 1.7030938, z: -0.848474}
+      rotation: {x: -0.57580787, y: 0.22728814, z: 0.57721, w: 0.53255427}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_011
+      parentName: Manga_Character01(Clone)
+      position: {x: -1.998085, y: 1.7422806, z: -0.8335727}
+      rotation: {x: -0.6136242, y: -0.10701382, z: -0.49324933, w: 0.60722196}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_012
+      parentName: Manga_Character01(Clone)
+      position: {x: -2.4707644, y: 0.1430216, z: -1.1225303}
+      rotation: {x: 0.1410437, y: 0.6457876, z: 0.7467674, w: -0.07350892}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_013
+      parentName: Manga_Character01(Clone)
+      position: {x: 1.3360089, y: 1.6007544, z: -0.8717127}
+      rotation: {x: -0.5588952, y: 0.24399127, z: 0.09117618, w: 0.78726834}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Cylinder_014
+      parentName: Manga_Character01(Clone)
+      position: {x: 2.5627694, y: 0.109579876, z: -1.0669714}
+      rotation: {x: -0.6860008, y: 0.12422814, z: 0.2536147, w: 0.67055935}
+      scale: {x: 1, y: 1, z: 0.99999994}
+    - name: Cylinder_015
+      parentName: Manga_Character01(Clone)
+      position: {x: 1.5226502, y: 0.78372246, z: -0.91133386}
+      rotation: {x: -0.6094698, y: 0.34120005, z: 0.31980568, w: 0.640198}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: Cylinder_016
+      parentName: Manga_Character01(Clone)
+      position: {x: -1.8557013, y: 0.92504644, z: -1.0387809}
+      rotation: {x: -0.58791584, y: 0.3583472, z: 0.14322765, w: 0.7109347}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cylinder_017
+      parentName: Manga_Character01(Clone)
+      position: {x: -1.7332842, y: 1.6462716, z: -0.8844524}
+      rotation: {x: -0.49514616, y: 0.31710544, z: 0.2741018, w: 0.7610143}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Eye_Brow
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Glove
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hair
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Jacket
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Long_Pant
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Shoes
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Short_sleeve_Shirt
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere
+      parentName: Manga_Character01(Clone)
+      position: {x: -1.5490503, y: 2.530052, z: -0.563269}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Sphere_001
+      parentName: Manga_Character01(Clone)
+      position: {x: 1.6439171, y: 2.5146816, z: -0.57765746}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Underware
+      parentName: Manga_Character01(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -238,10 +436,10 @@ ModelImporter:
     rootMotionBoneName: 
     rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
+  animationType: 3
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
