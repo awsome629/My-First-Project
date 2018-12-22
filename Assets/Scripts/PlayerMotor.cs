@@ -15,6 +15,7 @@ public class PlayerMotor : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        Time.timeScale = 1;
         startTime = Time.time;
         rb = GetComponent<Rigidbody>();
         controller = GetComponent<CharacterController>();
@@ -64,6 +65,13 @@ public class PlayerMotor : MonoBehaviour {
         speed = 5.0f + modifier;
 
     }
+    void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Pick Up"))
+        {
+            other.gameObject.SetActive(false);
+        }
+    }
     private void OnControllerColliderHit(ControllerColliderHit hit)
     {
         //if (rb.velocity == Vector3.zero)
@@ -72,6 +80,7 @@ public class PlayerMotor : MonoBehaviour {
     }
     private void Death()
     {
+        Time.timeScale = 0;
         isDead = true;
         GetComponent<Score>().OnDeath();
     }
